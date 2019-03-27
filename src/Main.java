@@ -77,13 +77,13 @@ public class Main {
 
             turn ++;
         }
+        System.out.println(turn + " turns.");
     }
 
     /** generate random AI movement */
     private static void AIMove(char[][] coords, int nRows) {
         try { TimeUnit.MILLISECONDS.sleep(500); }
         catch (InterruptedException e) { }
-
         System.out.println("");
         System.out.println("** O (A.I) **");
 
@@ -151,8 +151,6 @@ public class Main {
 
     /** write a movement to the coordinate array */
     private static void writeMove(char[] coords, char player, char opponent, int dist, int thisRow) {
-        boolean jump = false;
-
         int index = new String(coords).indexOf(player);
         coords[index] = ' ';
         if (coords[index + dist] == opponent) { // if jump over
