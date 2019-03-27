@@ -2,8 +2,6 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public class Main {
-
-
     public static void main(String[] args) {
         // get number of rows in game from user
         Scanner scanner = new Scanner(System.in);
