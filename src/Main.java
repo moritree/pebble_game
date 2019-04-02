@@ -25,7 +25,7 @@ public class Main {
             System.out.print("AI as 2nd player? ");
             String input = scanner.nextLine();
 
-            if (input.equals("true") || input.equals("False")) {
+            if (input.equals("true") || input.equals("True")) {
                 System.out.println("AI enabled.");
                 AI = true;
                 flag = true;
